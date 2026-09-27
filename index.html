@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bingo Ni Busseng</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="background-leaves leaf-one">🍃</div>
+    <div class="background-leaves leaf-two">🌿</div>
+    <div class="background-leaves leaf-three">🍃</div>
+
+    <div id="playerModal" class="modal-overlay">
+        <div class="welcome-card">
+            <div class="welcome-icon">🌿</div>
+            <h1>Bingo Ni Busseng</h1>
+            <p>Welcome to Bingo Ni Busseng. Survive the shift. Get a Bingo.</p>
+
+            <input type="text" id="playerNameInput" placeholder="Enter your name" maxlength="25">
+
+            <button id="startGameBtn">START GAME</button>
+
+            <small>Trainer: <span id="modalTrainer">Ms. Cherry</span></small>
+        </div>
+    </div>
+
+    <main class="game-container">
+
+        <header class="top-bar">
+
+            <div class="player-info">
+                <div class="profile-icon">🌱</div>
+                <div>
+                    <span class="small-label">BUSSENG</span>
+                    <h2 id="playerName">Player</h2>
+                    <p>Trainer: <span id="trainerName">Ms. Cherry Lang Sakalam</span></p>
+                </div>
+            </div>
+
+            <div class="game-title">
+                <span>🌿</span>
+                <div>
+                    <h1>BINGO NI BUSSENG</h1>
+                    <p>Stay alert. Stay green. Get Bingo.</p>
+                </div>
+                <span>🍃</span>
+            </div>
+
+            <div class="game-status">
+                <span class="small-label">EVENTS</span>
+                <strong id="eventCounter">0 / 24</strong>
+            </div>
+
+        </header>
+
+        <section class="message-section">
+
+            <div class="history-panel">
+
+                <div class="panel-title">
+                    <div>
+                        <span>🌱</span>
+                        <h3>Message History</h3>
+                    </div>
+                    <span id="historyCount">0</span>
+                </div>
+
+                <div id="historyList" class="history-list">
+                    <div class="empty-history">
+                        <span>🍃</span>
+                        <p>No messages yet...</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="current-message">
+
+                <div class="message-leaf">🍃</div>
+
+                <span class="message-label">BUSY SI BUSSENG</span>
+
+                <div id="messageText">
+                    Waiting for an event...
+                </div>
+
+                <div class="message-decoration">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <div class="event-timer">
+                    <span id="timerText">10</span>s
+                </div>
+
+                <div class="timer-track">
+                    <div id="timerProgress" class="timer-progress"></div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="bingo-area">
+
+            <div class="bingo-header">
+                <div>
+                    <span class="section-label">YOUR CARD</span>
+                    <h2>Bingo ni Busseng</h2>
+                </div>
+
+                <div class="free-space">
+                    <span>🌿</span>
+                    FREE SPACE
+                </div>
+            </div>
+
+            <div id="bingoCard" class="bingo-card"></div>
+
+            <div id="bingoContainer" class="bingo-button-container">
+                <button id="bingoBtn" class="bingo-btn">
+                    🎉 BINGO!
+                </button>
+            </div>
+
+        </section>
+
+        <footer class="site-footer">
+
+    <div class="footer-main">
+        <span>🌱</span>
+        <strong>Bingo Ni Busseng</strong>
+        <span>•</span>
+        <span>Survive the shift one tile at a time</span>
+        <span>🌿</span>
+    </div>
+
+    <div class="footer-bottom">
+        <span>© 2026 Stephen Condino. All rights reserved.</span>
+
+        <a
+            href="https://github.com/StephenGotHacked/bnb"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="github-link"
+            aria-label="View Bingo Ni Busseng on GitHub"
+        >
+            <svg
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+            >
+                <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.167 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.866-.013-1.7-2.782.604-3.369-1.34-3.369-1.34-.455-1.156-1.11-1.464-1.11-1.464-.908-.62.069-.607.069-.607 1.004.071 1.532 1.032 1.532 1.032.892 1.529 2.341 1.087 2.91.831.091-.646.35-1.087.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0 1 12 6.844a9.6 9.6 0 0 1 2.504.337c1.909-1.294 2.748-1.025 2.748-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.744 0 .267.18.578.688.48C19.138 20.164 22 16.418 22 12c0-5.523-4.477-10-10-10z"/>
+            </svg>
+
+            <span>View on GitHub</span>
+        </a>
+    </div>
+
+</footer>
+
+    </main>
+
+    <div id="bingoModal" class="modal-overlay hidden">
+
+        <div class="bingo-modal">
+
+            <div class="confetti">🎉</div>
+
+            <div class="bingo-leaf">🌿</div>
+
+            <h1>BINGO!</h1>
+
+            <p id="winnerMessage">
+                Congratulations!
+            </p>
+
+            <div class="bingo-line">
+                <span></span>
+                <strong>YOU DID IT</strong>
+                <span></span>
+            </div>
+
+            <button id="playAgainBtn">
+                PLAY AGAIN
+            </button>
+
+        </div>
+
+    </div>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
