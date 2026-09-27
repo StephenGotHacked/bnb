@@ -66,7 +66,7 @@ message: "Scammer"
 id: "koya",
 title: "Rex",
 image: "images/rex.png",
-message: "Mga 8080"
+message: "Tatang"
 },
 {
 id: "innet",
