@@ -59,7 +59,7 @@ The game currently contains **24 events**.
 | Jan | .... |
 | Jay | Girling Pie |
 | Kean | Scammer |
-| Rex | Mga 8080 |
+| Rex | Tatang |
 
 ### 📚 Cigna / Benefits / Tools
 
